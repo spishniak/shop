@@ -10,8 +10,14 @@ const answer = input();
 
 if (answer === VODKA) {
     console.log('how old are you?');
-    const age = input();
+    let age = input();
+    console.log(age)
     
+    while(isNaN(age)){
+        console.log("age must be number")
+        age = input();
+    }
+
     if (age >= ADULT_AGE) {
         console.log('Ok');
     } else {
