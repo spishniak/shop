@@ -11,9 +11,8 @@ const answer = input();
 if (answer === VODKA) {
     console.log('how old are you?');
     let age = input();
-    console.log(age)
     
-    while(isNaN(age)){
+    while(isNaN(age) || age < 0){
         console.log("age must be number")
         age = input();
     }
